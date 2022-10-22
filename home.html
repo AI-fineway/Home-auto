@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+        </style>
+        <link rel="stylesheet" href="./boostrap-offline/css/css/bootstrap.css">
+        <script src="./boostrap-offline/js/js/jquery-3.6.0.js"></script>
+          <script src="./boostrap-offline/js/js/bootstrap.js"></script>
+      
+<!-- Normalize -->
+<!-- main css -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js" ></script>
+<link rel="stylesheet" href="style.css"/>
+<script src = "/jquery/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+ 
+<!-- nav -->
+<nav class="navbar">
+    <div class="nav-center">
+        <!--header  -->
+        <div class="nav-header">
+            
+                <span  class="nav-logo"> Electrify</span>
+                <!-- <img src="./assets/logo.svg"  alt="simply recipes"/> -->
+                       
+                        <button class="btn nav-btn  ">
+                          <img src="./assets/icons8-list-30.png" alt="">
+                         </button>
+        </div>
+        <!-- links -->
+    <div class="nav-links ">
+
+   <button class="btn   nav-link logouts  "><a href="main.html" >Logout</a>     </button>
+
+
+    <div class="dropdown nav-link " >
+
+      <button class="btn btn-primary  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+        Admin
+      </button>
+        <div class="dropdown-menu"  id="drops">
+        
+        </div>
+</div>
+
+
+<!-- id="Admin" -->
+
+    <div class="btn  nav-link">   
+        <a href="contact.html" >Contact Us</a>
+    </div>
+</div> 
+ </div> 
+</nav> 
+<!-- end of nav   -->
+
+<!-- main -->
+<main class="page">
+<!-- header -->
+<header class="hero">
+     <div class="hero-container" id="her">
+     
+         </div>
+</header>
+<!-- end of header -->
+<!-- Products section -->
+ <div class="device-container"  id='container'>
+
+      
+      <div id='list' class="li">
+        <ul>
+
+        </ul>
+      </div>
+      </div>
+
+ 
+<!-- end of device item  -->
+</main>
+<!-- end of main  -->
+<!-- footer -->
+<footer class="page-footer">
+<p>&copy; <span id = "date">  </span>
+<span class="footer-logo">Electrify</span>
+Built by <a href="https://www.johnsmilga.com">
+Sotronics Digital  </a>
+</p>
+</footer>
+
+
+<script src="app.js"></script>
+<script>
+  var i = 0;
+  var txt =  `Call +234 70-598-652-33 Now! for Enquiries`;
+  var speed = 200;
+  // setInterval(() => {
+  //   typeWriter()
+  // },2000); 
+  typeWriter()
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("her").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed); 
+  }
+  if(i >=txt.length){ 
+    //Delay('2s')
+    document.getElementById("her").innerHTML ='' 
+      i=0
+    }
+      
+    }
+  </script>
+</body>
+</html>   
